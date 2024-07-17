@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-17T16:54:42 IST" name="Suite" finished-at="2024-07-17T16:56:02 IST" duration-ms="80035">
+    <groups>
+    </groups>
+    <test started-at="2024-07-17T16:54:42 IST" name="Test" finished-at="2024-07-17T16:56:02 IST" duration-ms="80035">
+      <class name="testClasses.WebTablesTest">
+        <test-method is-config="true" signature="initBrowser()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:54:42 IST" name="initBrowser" finished-at="2024-07-17T16:55:19 IST" duration-ms="36360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:20 IST" name="createObject" finished-at="2024-07-17T16:55:20 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="validatingWebTables(java.util.Map)[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:20 IST" name="validatingWebTables" data-provider="data" finished-at="2024-07-17T16:55:27 IST" duration-ms="7260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Rajesh, lastName=Sharma, userEmail=rajesh@gmail.com, salary=15000, department=IT, age=21}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingWebTables -->
+        <test-method signature="validatingWebTables(java.util.Map)[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:27 IST" name="validatingWebTables" data-provider="data" finished-at="2024-07-17T16:55:34 IST" duration-ms="6943" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Priya, lastName=Mishra, userEmail=priya@gmail.com, salary=18000, department=IT, age=22}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingWebTables -->
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:27 IST" name="createObject" finished-at="2024-07-17T16:55:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:34 IST" name="createObject" finished-at="2024-07-17T16:55:34 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="validatingWebTables(java.util.Map)[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:34 IST" name="validatingWebTables" data-provider="data" finished-at="2024-07-17T16:55:41 IST" duration-ms="6872" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Priti, lastName=Gupta, userEmail=priti@gmail.com, salary=20000, department=Admin, age=23}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingWebTables -->
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:41 IST" name="createObject" finished-at="2024-07-17T16:55:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="validatingWebTables(java.util.Map)[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:41 IST" name="validatingWebTables" data-provider="data" finished-at="2024-07-17T16:55:48 IST" duration-ms="6881" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Jaya, lastName=R, userEmail=jaya@gmail.com, salary=22000, department=HR, age=24}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingWebTables -->
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:48 IST" name="createObject" finished-at="2024-07-17T16:55:48 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="validatingWebTables(java.util.Map)[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:48 IST" name="validatingWebTables" data-provider="data" finished-at="2024-07-17T16:55:55 IST" duration-ms="6967" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Ganesh, lastName=G, userEmail=ganesh@gmail.com, salary=30000, department=Admin, age=28}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingWebTables -->
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:55 IST" name="createObject" finished-at="2024-07-17T16:55:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="validatingWebTables(java.util.Map)[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:55 IST" name="validatingWebTables" data-provider="data" finished-at="2024-07-17T16:56:02 IST" duration-ms="6959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Ajay, lastName=A, userEmail=ajay@gmail.com, salary=35000, department=HR, age=33}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingWebTables -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:56:02 IST" name="tearDown" finished-at="2024-07-17T16:56:02 IST" duration-ms="652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testClasses.WebTablesTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
