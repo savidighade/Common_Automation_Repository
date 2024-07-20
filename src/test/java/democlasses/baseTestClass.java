@@ -1,4 +1,4 @@
-package testClasses;
+package democlasses;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -15,34 +15,26 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pageClasses.ButtonsPage;
-import pageClasses.CheckBoxPage;
-import pageClasses.CheckoutPage;
-import pageClasses.RadioButtonPage;
-import pageClasses.TextBoxPage;
-import pageClasses.WebTablePage;
 import pageClasses.testCheckBoxPage;
 
-public class BaseClass {
-
-	public WebDriver driver;
-	public CheckoutPage cop;
-	public JavascriptExecutor js;
-	public CheckBoxPage cob;
-	public RadioButtonPage rob;
-	public TextBoxPage tbp;
-	public ButtonsPage bp;
-	public WebTablePage wtb;
+public class baseTestClass {
+	public static WebDriver driver;
 	public static Properties prop = new Properties();
-	public static String WORKING_DIR = System.getProperty("user.dir");
 	public static FileReader fr;
+	public testCheckBoxPage tp;
 	public ChromeOptions chromeoptions;
 	public EdgeOptions edgeoptions;
+	public JavascriptExecutor js;
+	public static String WORKING_DIR = System.getProperty("user.dir");
 
 	@BeforeClass(alwaysRun = true)
 
@@ -50,12 +42,20 @@ public class BaseClass {
 
 		if (driver == null) {
 
-			String relativePath = "src\\main\\resources\\configFiles\\config.properties";
-			String propFilePath = WORKING_DIR + System.getProperty("file.separator") + relativePath;
-			prop.load(new FileReader(propFilePath));
+			// String projectPath = System.getProperty("user.dir");
+			// FileReader fr = new FileReader(projectPath +
+			// "src\\main\\resources\\configFiles\\config.properties");
+
+			FileReader fr = new FileReader(
+					"C:\\Users\\savita.dighade\\Downloads\\PractiseFramework 11\\Automation_Practise\\src\\"
+							+ "main\\resources\\configFiles\\config.properties");
+
+			  String propFilePath = WORKING_DIR + System.getProperty("file.separator") + "/conf.properties";
+		        prop.load(new FileReader(propFilePath));
+			//prop.load(fr);
+
 		}
 
-		// Chrome browser
 		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 
@@ -72,16 +72,17 @@ public class BaseClass {
 			driver.manage().window().maximize();
 			driver.get(prop.getProperty("testurl"));
 
+			driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+
 			WebElement element = driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M16 132h41')]"));
 
 			JavascriptExecutor js = ((JavascriptExecutor) driver);
 			js.executeScript("arguments[0].scrollIntoView();", element);
 			element.click();
 
-		}
+			driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
 
-		// Edge Browser
-		else if (prop.getProperty("browser").equalsIgnoreCase("edge")) {
+		} else if (prop.getProperty("browser").equalsIgnoreCase("edge")) {
 
 			WebDriverManager.edgedriver().setup();
 
@@ -92,15 +93,18 @@ public class BaseClass {
 			driver.manage().window().maximize();
 			driver.get(prop.getProperty("testurl"));
 
-			WebElement element = driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M16 132h41')]"));
+			driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
 
-			JavascriptExecutor js = ((JavascriptExecutor) driver);
-			js.executeScript("arguments[0].scrollIntoView();", element);
-			element.click();
+			WebElement element1 = driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M16 132h41')]"));
+
+			JavascriptExecutor js1 = ((JavascriptExecutor) driver);
+			js1.executeScript("arguments[0].scrollIntoView();", element1);
+			element1.click();
+
+			driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
 
 		}
 
-		// Firefox Browser
 		else if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
 
 			WebDriverManager.firefoxdriver().setup();
@@ -112,34 +116,27 @@ public class BaseClass {
 			driver.manage().window().maximize();
 			driver.get(prop.getProperty("testurl"));
 
-			WebElement element = driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M16 132h41')]"));
+			driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
 
-			JavascriptExecutor js = ((JavascriptExecutor) driver);
-			js.executeScript("arguments[0].scrollIntoView();", element);
-			element.click();
+			WebElement element1 = driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M16 132h41')]"));
 
+			JavascriptExecutor js1 = ((JavascriptExecutor) driver);
+			js1.executeScript("arguments[0].scrollIntoView();", element1);
+			element1.click();
+
+			driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+			
 		} else {
 			System.out.println("Browser not found");
 		}
 	}
 
 	@BeforeMethod(alwaysRun = true)
-
 	public void createObject() {
-		// cop = new CheckTextoutPage(driver);
-
-		cob = new CheckBoxPage(driver);
-
-		rob = new RadioButtonPage(driver);
-
-		tbp = new TextBoxPage(driver);
-
-		bp = new ButtonsPage(driver);
-
-		wtb = new WebTablePage(driver);
+		tp = new testCheckBoxPage(driver);
 	}
 
-	@AfterClass(alwaysRun = true)
+	@AfterClass
 	public void tearDown() {
 		driver.quit();
 		System.out.println("Teardown Successfully");

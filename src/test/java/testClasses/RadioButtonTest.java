@@ -5,10 +5,11 @@ import org.testng.annotations.Test;
 public class RadioButtonTest extends BaseClass{
 	
 
-	@Test(priority = 2)
+	@Test(groups = {"Smoke"})
 	
 	public void validatingRadioButton() throws Exception
 	{
 		rob.RadiobuttonElement();
+		System.out.println("Smoke Test");
 	}
 }

@@ -5,15 +5,20 @@
     <listener class-name="utilclasses.TestListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="testClasses.WebTablesTest">
+      <class name="testClasses.CheckBoxTest">
         <methods>
           <include name="createObject"/>
           <include name="tearDown"/>
-          <include name="initBrowser"/>
-          <include name="validatingWebTables" invocation-numbers="2 3 4 5"/>
+          <include name="validatingCheckBox"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testClasses.WebTablesTest -->
+      </class> <!-- testClasses.CheckBoxTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

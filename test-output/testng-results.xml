@@ -1,111 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-17T16:54:42 IST" name="Suite" finished-at="2024-07-17T16:56:02 IST" duration-ms="80035">
+  <suite started-at="2024-07-19T19:40:39 IST" name="Suite" finished-at="2024-07-19T19:41:19 IST" duration-ms="40363">
     <groups>
+      <group name="Smoke">
+        <method signature="ButtonsTest.validatingButtons()[pri:0, instance:testClasses.ButtonsTest@69c81773]" name="validatingButtons" class="testClasses.ButtonsTest"/>
+        <method signature="CheckBoxTest.validatingCheckBox()[pri:0, instance:testClasses.CheckBoxTest@5db6b9cd]" name="validatingCheckBox" class="testClasses.CheckBoxTest"/>
+        <method signature="RadioButtonTest.validatingRadioButton()[pri:0, instance:testClasses.RadioButtonTest@6f43c82]" name="validatingRadioButton" class="testClasses.RadioButtonTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-07-17T16:54:42 IST" name="Test" finished-at="2024-07-17T16:56:02 IST" duration-ms="80035">
-      <class name="testClasses.WebTablesTest">
-        <test-method is-config="true" signature="initBrowser()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:54:42 IST" name="initBrowser" finished-at="2024-07-17T16:55:19 IST" duration-ms="36360" status="PASS">
+    <test started-at="2024-07-19T19:40:39 IST" name="Test" finished-at="2024-07-19T19:41:19 IST" duration-ms="40363">
+      <class name="testClasses.ButtonsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testClasses.ButtonsTest@69c81773]" started-at="2024-07-19T19:40:39 IST" name="setup" finished-at="2024-07-19T19:40:49 IST" duration-ms="10203" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initBrowser -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:20 IST" name="createObject" finished-at="2024-07-17T16:55:20 IST" duration-ms="57" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createObject -->
-        <test-method signature="validatingWebTables(java.util.Map)[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:20 IST" name="validatingWebTables" data-provider="data" finished-at="2024-07-17T16:55:27 IST" duration-ms="7260" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{firstName=Rajesh, lastName=Sharma, userEmail=rajesh@gmail.com, salary=15000, department=IT, age=21}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatingWebTables -->
-        <test-method signature="validatingWebTables(java.util.Map)[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:27 IST" name="validatingWebTables" data-provider="data" finished-at="2024-07-17T16:55:34 IST" duration-ms="6943" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{firstName=Priya, lastName=Mishra, userEmail=priya@gmail.com, salary=18000, department=IT, age=22}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatingWebTables -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:27 IST" name="createObject" finished-at="2024-07-17T16:55:27 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.ButtonsTest@69c81773]" started-at="2024-07-19T19:40:49 IST" name="createObject" finished-at="2024-07-19T19:40:49 IST" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:34 IST" name="createObject" finished-at="2024-07-17T16:55:34 IST" duration-ms="3" status="PASS">
+        <test-method signature="validatingButtons()[pri:0, instance:testClasses.ButtonsTest@69c81773]" started-at="2024-07-19T19:40:49 IST" name="validatingButtons" finished-at="2024-07-19T19:40:54 IST" duration-ms="4913" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createObject -->
-        <test-method signature="validatingWebTables(java.util.Map)[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:34 IST" name="validatingWebTables" data-provider="data" finished-at="2024-07-17T16:55:41 IST" duration-ms="6872" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{firstName=Priti, lastName=Gupta, userEmail=priti@gmail.com, salary=20000, department=Admin, age=23}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatingWebTables -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:41 IST" name="createObject" finished-at="2024-07-17T16:55:41 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createObject -->
-        <test-method signature="validatingWebTables(java.util.Map)[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:41 IST" name="validatingWebTables" data-provider="data" finished-at="2024-07-17T16:55:48 IST" duration-ms="6881" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{firstName=Jaya, lastName=R, userEmail=jaya@gmail.com, salary=22000, department=HR, age=24}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatingWebTables -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:48 IST" name="createObject" finished-at="2024-07-17T16:55:48 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createObject -->
-        <test-method signature="validatingWebTables(java.util.Map)[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:48 IST" name="validatingWebTables" data-provider="data" finished-at="2024-07-17T16:55:55 IST" duration-ms="6967" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{firstName=Ganesh, lastName=G, userEmail=ganesh@gmail.com, salary=30000, department=Admin, age=28}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatingWebTables -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:55 IST" name="createObject" finished-at="2024-07-17T16:55:55 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createObject -->
-        <test-method signature="validatingWebTables(java.util.Map)[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:55:55 IST" name="validatingWebTables" data-provider="data" finished-at="2024-07-17T16:56:02 IST" duration-ms="6959" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{firstName=Ajay, lastName=A, userEmail=ajay@gmail.com, salary=35000, department=HR, age=33}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatingWebTables -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.WebTablesTest@15888343]" started-at="2024-07-17T16:56:02 IST" name="tearDown" finished-at="2024-07-17T16:56:02 IST" duration-ms="652" status="PASS">
+        </test-method> <!-- validatingButtons -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.ButtonsTest@69c81773]" started-at="2024-07-19T19:40:54 IST" name="tearDown" finished-at="2024-07-19T19:40:55 IST" duration-ms="514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testClasses.WebTablesTest -->
+      </class> <!-- testClasses.ButtonsTest -->
+      <class name="testClasses.CheckBoxTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testClasses.CheckBoxTest@5db6b9cd]" started-at="2024-07-19T19:41:10 IST" name="setup" finished-at="2024-07-19T19:41:18 IST" duration-ms="8331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.CheckBoxTest@5db6b9cd]" started-at="2024-07-19T19:41:18 IST" name="createObject" finished-at="2024-07-19T19:41:18 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="validatingCheckBox()[pri:0, instance:testClasses.CheckBoxTest@5db6b9cd]" started-at="2024-07-19T19:41:18 IST" name="validatingCheckBox" finished-at="2024-07-19T19:41:19 IST" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingCheckBox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.CheckBoxTest@5db6b9cd]" started-at="2024-07-19T19:41:19 IST" name="tearDown" finished-at="2024-07-19T19:41:19 IST" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testClasses.CheckBoxTest -->
+      <class name="testClasses.RadioButtonTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testClasses.RadioButtonTest@6f43c82]" started-at="2024-07-19T19:40:55 IST" name="setup" finished-at="2024-07-19T19:41:05 IST" duration-ms="10404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testClasses.RadioButtonTest@6f43c82]" started-at="2024-07-19T19:41:05 IST" name="createObject" finished-at="2024-07-19T19:41:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="validatingRadioButton()[pri:0, instance:testClasses.RadioButtonTest@6f43c82]" started-at="2024-07-19T19:41:05 IST" name="validatingRadioButton" finished-at="2024-07-19T19:41:10 IST" duration-ms="4505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingRadioButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.RadioButtonTest@6f43c82]" started-at="2024-07-19T19:41:10 IST" name="tearDown" finished-at="2024-07-19T19:41:10 IST" duration-ms="507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testClasses.RadioButtonTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

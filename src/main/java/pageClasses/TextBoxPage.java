@@ -1,5 +1,7 @@
 package pageClasses;
 
+import java.util.Map;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -44,7 +46,7 @@ public class TextBoxPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void textBoxElement() throws Exception
+	public void textBoxElement(Map<String, String> input) throws Exception
 	{
 		ExtentTest extentTest = ExtentTestManager.startTest("TextBox", "Clicking on Button");
 		
@@ -56,15 +58,15 @@ public class TextBoxPage {
 		
 	    js.executeScript("arguments[0].scrollIntoView();", userName);
 			
-	    userName.sendKeys("Marsh");
+	    userName.sendKeys(input.get("Full Name"));
 			
 	    Thread.sleep(2000);
 	    
-	    userEmail.sendKeys("xyz@xyz.com");
+	    userEmail.sendKeys(input.get("Email"));
 	    
-	    currentAddress.sendKeys("Nashik Pune Highway");
+	    currentAddress.sendKeys(input.get("Current Address"));
 	    
-	    permanentAddress.sendKeys("Nashik Pune Highway");
+	    permanentAddress.sendKeys(input.get("Permanent Address"));
 	    
 		ExtentTestManager.getTest().log(Status.INFO, "clicking Submit");
 		

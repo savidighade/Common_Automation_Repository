@@ -15,11 +15,12 @@ public class WebTablesTest extends BaseClass
 	public Object[][] readExcelData()
  
 	{
-		return ExcelReader.readData("C:\\Users\\savita.dighade\\Downloads\\PractiseFramework 11\\Automation_Practise\\testdataDemoqa.xlsx", "WebtablesElement");
-		//return new ExcelReader(getClass()).readData("C:\\Users\\nitin.more\\Desktop\\TestDataForMapping.xlsx","Sheet1");
-	}
+		String FilePath="\\testdataDemoqa.xlsx";
+		String testDataFile=WORKING_DIR+System.getProperty("file.separator")+FilePath;
+		return ExcelReader.readData(testDataFile,"WebtablesElement");
+			}
 	
-	@Test (dataProvider = "data")
+	@Test (dataProvider = "data", groups = "Regression")
 	public void validatingWebTables(Map<String, String> input) throws Exception
 	{
 		wtb.webTablesElement(input);
