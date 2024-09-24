@@ -1,0 +1,8 @@
+{
+  "TestURLs": 
+  [
+    "https://demoqa.com/forms?testCaseId={testCaseId}",
+    "https://demoqa.com/widgets?testCaseId={testCaseId}",
+    "https://demoqa.com/elements?testCaseId={testCaseId}"
+  ]
+}
